@@ -1,4 +1,4 @@
-name: Publish to Hashnode
+name: Publish to Hashnodes
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Publish to Hashnode
+      - name: Publish to Hashnodes
         uses: actions/publish-github-to-hashnode@v1
         with:
           api_key: ${{ secrets.HASHNODE_TOKEN }}
